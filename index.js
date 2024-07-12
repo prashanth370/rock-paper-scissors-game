@@ -9,16 +9,15 @@ function playGame(playerChoice) {
 
     if (playerChoice === computerChoice) {
         result = "IT'S A TIE!";
+        resultDisplay.className = "";
     } else {
         switch (playerChoice) {
             case "rock":
                 result = (computerChoice === "scissors") ? "YOU WIN!" : "YOU LOSE!";
                 break;
-
             case "paper":
                 result = (computerChoice === "rock") ? "YOU WIN!" : "YOU LOSE!";
                 break;
-
             case "scissors":
                 result = (computerChoice === "paper") ? "YOU WIN!" : "YOU LOSE!";
                 break;
