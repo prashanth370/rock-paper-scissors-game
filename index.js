@@ -42,4 +42,5 @@ function playGame(playerChoice) {
         computerScore++;
         computerScoreDisplay.textContent = computerScore;
     }
+
 }
